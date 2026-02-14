@@ -18,11 +18,11 @@ call_user_func(function () {
 
 	// New palette header
 	$GLOBALS['TCA']['tt_content']['palettes']['ce_counter_header'] = array(
-		'showitem' => 'header, header_layout, header_position','canNotCollapse' => 1
+		'showitem' => 'header, header_layout, header_link',
 	);
 
 	$GLOBALS['TCA']['tt_content']['palettes']['ce_counter_settings'] = array(
-		'showitem' => 'counter_time, counter_stop, --linebreak--, counter_labels, counter_format','canNotCollapse' => 1
+		'showitem' => 'counter_time, counter_stop, --linebreak--, counter_labels, counter_format'
 	);
 
 	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['ce_counter'] = 'ce-counter-record';

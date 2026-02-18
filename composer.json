@@ -1,8 +1,8 @@
 {
-    "name": "fullstackfreelancer/ce-counter",
+    "name": "kohlercode/ce-counter",
     "type": "typo3-cms-extension",
-    "version": "3.0.0",
-    "description": "Enables a new content element of type Counter",
+    "version": "4.0.0",
+    "description": "Counter - Enables a new content element of type Counter",
     "homepage": "https://kohlercode.com/",
     "authors": [
         {
@@ -28,12 +28,12 @@
     ],
     "support": {
         "email": "info@simon-koehler.com",
-        "docs": "https://github.com/fullstackfreelancer/ce_counter",
-        "issues": "https://github.com/fullstackfreelancer/ce_counter/issues"
+        "docs": "https://github.com/kohlercode/ce_counter",
+        "issues": "https://github.com/kohlercode/ce_counter/issues"
     },
     "license": "GPL-3.0-or-later",
     "require": {
-        "typo3/cms-core": "^12.4.0 || ^13.4.0"
+        "typo3/cms-core": ">=14.0.0 <15.0.0"
     },
     "keywords": [
         "TYPO3",
@@ -46,7 +46,7 @@
         "addon"
     ],
     "replace": {
-        "simonkoehler/ce-counter": "self.version",
+        "kohlercode/ce-counter": "self.version",
         "typo3-ter/ce-counter": "self.version"
     },
     "extra": {

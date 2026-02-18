@@ -18,6 +18,6 @@ TCEFORM.tt_content.layout.types.ce_counter {
     removeItems = 1,2,3
     addItems {
         400 = Fancy Purple Pill
-        401 = Plain Bootstrap
+        401 = Plain Bootstrap (v5)
     }
 }

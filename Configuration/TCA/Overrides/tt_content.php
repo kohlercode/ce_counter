@@ -1,6 +1,10 @@
 <?php
 defined('TYPO3') or die();
 
+/**
+ * Author: Simon Köhler (KOHLERCODE LLC)
+ */
+
 call_user_func(function () {
 	$frontendLanguageFilePrefix = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:';
 
@@ -18,7 +22,7 @@ call_user_func(function () {
 
 	// New palette header
 	$GLOBALS['TCA']['tt_content']['palettes']['ce_counter_header'] = array(
-		'showitem' => 'header, header_layout, header_link',
+		'showitem' => 'header, header_layout, header_link'
 	);
 
 	$GLOBALS['TCA']['tt_content']['palettes']['ce_counter_settings'] = array(

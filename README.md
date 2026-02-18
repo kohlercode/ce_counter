@@ -1,59 +1,79 @@
-<table border="0" width="100%">
-<tr><td width="130"><img src="https://extensions.typo3.org/typo3temp/assets/tx_terfe2/images/ce_counter_2.0.0.svg" width="120" height="120"></td>
-<td>
-
 # Counter Content Element for TYPO3 CMS
 
-</td>
-</tr>
-</table>
+`ce_counter` adds a configurable counter / countdown content element to TYPO3.  
+It ships with multiple layouts, supports several counters on the same page and lets you fully control labels and formatting.
 
-Provides a new content element that displays a visual counter in the frontend. Three layouts are integrated, including a bare Bootstrap template. Custom templates can be easily added. Multiple counters can be displayed on the same page, and the format and labeling can be customized.
+## Status & Compatibility
 
-<table border="0">
-    <tr>
-        <th>Status</b></th>
-        <td><strong>stable</strong></td>
-    </tr>
-    <tr>
-        <th>TYPO3 version</b></th>
-        <td>12.4.0 - 13.4.9</td>
-    </tr>
-    <tr>
-        <th>TER</b></th>
-        <td><a href="https://extensions.typo3.org/extension/ce_counter/">Download</a></td>
-    </tr>
-</table>
+- **Status:** stable  
+- **Extension key:** `ce_counter`  
+- **Composer package:** `kohlercode/ce-counter`  
+- **TYPO3 versions:** **14.0.0 – 14.99.99**
 
-## LIVE DEMO
-https://kohlercode.com/products/typo3-extensions/counter-content-element
+Download from the TER: <https://extensions.typo3.org/extension/ce_counter/>
 
-<hr>
+## Live demo
 
-## IMPORTANT NOTE FOR UPDATES FROM 2.0 to 3.0
-- install and overwrite the extension
-- TypoScript must be integrated in the site settings or in an extension template
-- The new fields "format" and "labels" must be filled in for existing ce_counter content elements
+<https://kohlercode.com/products/typo3-extensions/counter-content-element>
 
 ## Features
 
-- Adds a Countdown to a given date to the website*
+- Visual countdown / counter to a configurable date and time
+- Three integrated layouts: default, fancy and plain Bootstrap markup
+- Support for multiple counters on the same page
+- Customizable labels (e.g. `days,hours,minutes,seconds`)
+- Customizable format (e.g. `d,h,m,s`)
+- Ready-to-use TypoScript site set (`Counter: Basic Setup`)
 
-<sup>*</sup> (more options coming soon!)
+## Requirements
+
+- TYPO3 CMS **14.0.0 – 14.99.99**
+- PHP version according to the supported TYPO3 core version
 
 ## Installation
 
-Install the extension by downloading it in the extension manager or on https://extensions.typo3.org/extension/ce_counter/.
+### Via Composer (recommended)
 
-## Basic configuration
+```bash
+composer require kohlercode/ce-counter
+```
 
-- TypoScript must be integrated in the site settings or in an extension template
-- That's it. Easy, right?
+Then activate the extension in the TYPO3 Extension Manager.
 
-## Support & Service
+### Via Extension Manager / TER
 
-If you have any problems with the extension, please let me know! Since this is open source, I only guarantee 100% expert support when I get paid, but I also like to support the community. Please don't hesitate to open an issue here on GitHub or send a message: https://kohlercode.com/contact
+1. Download `ce_counter` from the TER (`ce_counter` extension).  
+2. Install and activate it in the Extension Manager.
 
-## Your Donation Makes a Difference
-Keep TYPO3 Extensions Alive & Evolving
-- https://kohlercode.com/donate
+## Configuration
+
+1. **Include TypoScript**
+   - Use the site configuration and add the site set **“Counter: Basic Setup”**, or
+   - Include the TypoScript in an extension template.
+2. **Create a new content element**
+   - Add a new content element of type **“Counter”** (`CType = ce_counter`).
+   - Configure:
+     - Target date / time
+     - Whether the counter stops at zero
+     - Labels (e.g. `days,hours,minutes,seconds`)
+     - Format (e.g. `d,h,m,s`)
+
+## Upgrade notes from older versions
+
+When upgrading from older major versions (e.g. 2.x / 3.x):
+
+- Install and overwrite the extension.  
+- Make sure the TypoScript is integrated via the site set or an extension template.  
+- Fill the new fields **“format”** and **“labels”** for existing `ce_counter` content elements.
+
+## Support & service
+
+If you have any problems or ideas for improvements, please open an issue on GitHub or get in touch: <https://kohlercode.com/contact>
+
+Since this is open source software, I can only guarantee full, priority support on paid engagements – but I do my best to support the community whenever possible.
+
+## Your donation makes a difference
+
+Keep TYPO3 extensions alive & evolving:
+
+- <https://kohlercode.com/donate>
